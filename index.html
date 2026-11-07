@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ד״ר רובוט – AI לנשות מערכת הבריאות</title>
+  <meta name="description" content="כלי אינטראקטיבי בעברית ללימוד ושימוש בבינה מלאכותית, למזכירות רפואיות, מנהלות מרפאה ומלוות רופאים. מחולל פרומפטים מוכנים לשימוש.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">דלגי לתוכן</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand" aria-label="לעמוד הראשי">
+        <span class="brand-icon" aria-hidden="true">🩺</span>
+        <span class="brand-name" data-site-name></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="פתיחת תפריט">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="ניווט ראשי">
+        <a href="#/" data-route="home">ראשי</a>
+        <a href="#/generator" data-route="generator">מחולל פרומפטים</a>
+        <a href="#/tools" data-route="tools">איזה כלי AI לבחור</a>
+        <a href="#/safety" data-route="safety">בטיחות ופרטיות</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="safety-banner" role="note" aria-label="אזהרת פרטיות">
+    <div class="container banner-inner">
+      <span class="banner-icon" aria-hidden="true">🔒</span>
+      <p>
+        <strong>לעולם אל תזיני פרטים מזהים של מטופלים לכלי AI:</strong>
+        לא שם, לא תעודת זהות, לא טלפון, לא תאריך לידה ולא מידע רפואי שניתן לקשר לאדם.
+        השתמשי בתיאור כללי בלבד ("מטופלת בת 60", "מטופל עם תור חוזר").
+        <a href="#/safety">לכללי הבטיחות המלאים</a>
+      </p>
+    </div>
+  </div>
+
+  <main id="main" class="container" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><span data-site-name></span> · כלי עזר ללימוד ושימוש ב-AI במערכת הבריאות.</p>
+      <p class="footer-note">הפרומפטים נוצרים במכשיר שלך ונשמרים רק בדפדפן שלך. האתר אינו שולח מידע לשום שרת.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
